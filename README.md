@@ -86,15 +86,13 @@ Scroll Kebawah Dan Setting Seperti Ini
 `https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat`
 
 #### GeoSite
-* Ceklis Pada Enable GeoIP Dat
-* Kemudian Ceklis Auto Update GeoIP Dat
-* Pada Custom GeoIP Dat URL Isi URL Di Bawah Ini Kemudian Enter
+* Ceklis Pada Auto Update GeoSite Database
+* Pada Custom GeoSite URL Isi URL Di Bawah Ini Kemudian Enter
 
-`https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat`
+`https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat`
 
 Sesuaikan Seperti Gambar Di Bawah
 <img src="/assets/Meta Geo.png" border="0">
-
 
 ### Edit Files Proxy Provider
 
@@ -143,23 +141,23 @@ Setelah memperoleh nama interface dari tiap WAN suudah di tentukan maka tinggal 
 	
 	```yaml
      - name: ✔️ Direct Mode
-		 type: select
-		 disable-udp: false
-		 proxies:
-		 - DIRECT ISP1
-		 - DIRECT ISP2 #Hapus Baris Ini
-		 - 🔰 Browsing 🔰
-
-	   - name: 🎮 Gaming UDP
-		 type: select
-		 disable-udp: false
-		 proxies:
-		 - DIRECT ISP1
-		 - DIRECT ISP2 #Hapus Baris Ini
-		 use:
-		 - PP-Gaming
-		 url: http://www.gstatic.com/generate_204
-		 interval: '30'
+     type: select
+     disable-udp: false
+     proxies:
+     - DIRECT ISP1
+     - DIRECT ISP2 #Hapus Baris Ini
+     - 🔰 Browsing 🔰
+     
+     - name: 🎮 Gaming UDP
+     type: select
+     disable-udp: false
+     proxies:
+     - DIRECT ISP1
+     - DIRECT ISP2 #Hapus Baris Ini
+     use:
+     - PP-Gaming
+     url: http://www.gstatic.com/generate_204
+     interval: '30'
 
      - name: DIRECT LB
      type: load-balance
