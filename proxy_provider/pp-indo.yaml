@@ -1,0 +1,36 @@
+proxies:
+- name: SANGGO ViMS XL1
+  interface-name: eth1
+  type: vmess
+  server: 172.67.199.34
+  port: 443
+  uuid: 6f503120-8007-11ed-ab3f-1577c1651679
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: id-sanggoro-jkt3.1server.co
+  network: ws
+  ws-opts:
+    path: /fastssh
+    headers:
+      Host: id-sanggoro-jkt3.1server.co
+
+- name: SANGGO ViMS XL2
+  interface-name: eth2
+  type: vmess
+  server: 172.67.199.34
+  port: 443
+  uuid: 6f503120-8007-11ed-ab3f-1577c1651679
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: id-sanggoro-jkt3.1server.co
+  network: ws
+  ws-opts:
+    path: /fastssh
+    headers:
+      Host: id-sanggoro-jkt3.1server.co
